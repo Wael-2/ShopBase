@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopBase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>ShopBase</h1>
+            <button class="cart-button">🛒Cart (<span class="cart-count">0</span>)</button>
+        </div>
+        <div class="main-content">
+          <div class="search-bar">  
+            <label for="search">Search Product: </label>
+            <input type="text" id="search">
+          </div>  
+            <div class="filter">
+                <select class="category">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="home">Home</option>
+                </select>
+                <select class="sort">
+                    <option value="">Featured</option>
+                    <option value="price-highest">Price ↓</option>
+                    <option value="price-lowest">Price ↑</option>
+                    <option value="a-z">A-Z</option>
+                    <option value="z-a">Z-A</option>
+                </select>
+            </div>
+            <div class="product-list">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-modal">
+        <div class="modal-content">
+            <button class="close-modal">X</button>
+            <img class="modal-image">
+            <h2 class="modal-name"></h2>
+            <p class="modal-price"></p>
+            <p class="modal-category"></p>
+            <p class="modal-stock"></p>
+            <p class="modal-rating"></p>
+            <p class="modal-description"></p>
+            <button class="modal-add-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="cart-ui">
+        <div class="cart-ui-content">
+            
+        </div>
+    </div>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>
